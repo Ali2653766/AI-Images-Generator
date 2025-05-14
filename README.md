@@ -1,3 +1,1 @@
-# FashCloths-LandingPage
-
-## FashCloths - Buy Fashion Clothes Trends
+# AI - Image Generator
