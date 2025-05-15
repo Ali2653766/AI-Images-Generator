@@ -37,7 +37,7 @@
                 </div>
                 <!--GENERATE IMAGE BUTON-->
                 
-                <button class="submit">
+                <button onclick="generateImage()" class="submit">
                     <svg class="i-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-magic" viewBox="0 0 16 16">
                         <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z"/>
                     </svg> 
@@ -45,8 +45,23 @@
                 </button>
             </section>
 
-            <section class="image-container">
+            <section id="imageContainer" class="image-container">
+                <img class="img-result" src="https://docs.imagine.art/~gitbook/image?url=https%3A%2F%2F1987912879-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F3iz53jxWE4tHyEpWPg7k%252Fuploads%252F2CRRGX2Kquw91ATS7mCl%252Fresponse.png%3Falt%3Dmedia%26token%3Db79ee7ba-5c57-4e24-a592-54309c1ee574&width=768&dpr=1&quality=100&sign=56c71359&sv=2" alt="">
+                <div class="layer">
 
+                </div>
+                <button class="download">
+                    <svg class="i-download" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                    </svg>
+                </button>
+
+                <!-- LOADING -->
+                 <div class="loading">
+                    <svg class="loaing-spinner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><radialGradient id="a11" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)"><stop offset="0" stop-color="#2356FF"></stop><stop offset=".3" stop-color="#2356FF" stop-opacity=".9"></stop><stop offset=".6" stop-color="#2356FF" stop-opacity=".6"></stop><stop offset=".8" stop-color="#2356FF" stop-opacity=".3"></stop><stop offset="1" stop-color="#2356FF" stop-opacity="0"></stop></radialGradient><circle transform-origin="center" fill="none" stroke="url(#a11)" stroke-width="15" stroke-linecap="round" stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100" cy="100" r="70"><animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2" values="360;0" keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform></circle><circle transform-origin="center" fill="none" opacity=".2" stroke="#2356FF" stroke-width="15" stroke-linecap="round" cx="100" cy="100" r="70"></circle></svg>
+                    <span class="loading-text">Generating Image...</span>
+                </div>
             </section>
         </div>
     </main>
